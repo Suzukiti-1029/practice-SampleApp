@@ -1,0 +1,4 @@
+FROM tomcat:10.1.0-jdk17
+RUN rm -r /usr/local/tomcat/webapps
+RUN mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
+RUN mkdir /usr/local/tomcat/webapps/SampleApp

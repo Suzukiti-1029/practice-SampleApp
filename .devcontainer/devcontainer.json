@@ -1,0 +1,12 @@
+{
+  "name": "SampleApp",
+  "dockerFile": "tomcat-docker",
+  "forwardPorts": [8080],
+  "workspaceFolder": "/usr/local/tomcat/",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/usr/local/tomcat/webapps/SampleApp,type=bind,consistency=cached"
+  ],
+  "extensions": [
+    "vscjava.vscode-java-pack"
+  ]
+}
